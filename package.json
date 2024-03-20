@@ -1,0 +1,30 @@
+{
+  "name": "@laozei/reset.css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "reset.min.css",
+  "scripts": {
+    "start": "npm run build && npm run build:min",
+    "build": "sass reset.scss:reset.css --no-source-map",
+    "build:min": "sass reset.scss:reset.min.css -s compressed --no-source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laozei6401/reset.css.git"
+  },
+  "keywords": [
+    "reset.css",
+    "reset",
+    "normalize",
+    "css"
+  ],
+  "author": "laozei6401",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/laozei6401/reset.css/issues"
+  },
+  "homepage": "https://github.com/laozei6401/reset.css#readme",
+  "devDependencies": {
+    "sass": "^1.72.0"
+  }
+}
