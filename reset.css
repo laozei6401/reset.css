@@ -2,15 +2,19 @@
 ::before,
 ::after {
   box-sizing: border-box;
+  background-repeat: no-repeat;
 }
 
 ::before,
 ::after {
-  text-decoration: inherit;
   vertical-align: inherit;
+  text-decoration: inherit;
 }
 
 html {
+  line-height: 1.15;
+  tab-size: 4;
+  overflow-wrap: break-word;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -20,9 +24,8 @@ html {
 body {
   margin: 0;
   color: #252933;
-  font-size: 16px;
   font-family: -apple-system, system-ui, Helvetica Neue, PingFang SC, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Hiragino Sans GB, Microsoft YaHei, Arial;
-  line-height: 1.5;
+  font-size: 16px;
   word-break: break-word;
 }
 
@@ -58,9 +61,9 @@ p {
 }
 
 hr {
-  color: inherit;
-  height: 0;
   overflow: visible;
+  height: 0;
+  color: inherit;
 }
 
 ol,
@@ -71,8 +74,8 @@ dl {
 
 ol,
 ul {
-  list-style: none;
   padding: 0;
+  list-style: none;
 }
 
 pre,
@@ -86,13 +89,13 @@ samp {
 kbd {
   display: inline-block;
   padding: 0.2em 0.5em;
-  color: #5d5d5d;
-  font-size: 12px;
-  font-family: Consolas, Monaco, Courier New, monospace;
-  border: 1px solid #d2d2d2;
-  line-height: normal;
-  border-radius: 4px;
   user-select: none;
+  color: #5d5d5d;
+  font-family: Consolas, Monaco, Courier New, monospace;
+  font-size: 12px;
+  line-height: normal;
+  border: 1px solid #d2d2d2;
+  border-radius: 4px;
 }
 
 pre {
@@ -117,15 +120,15 @@ strong {
 }
 
 mark {
-  background: #ffff00;
-  color: #000000;
+  color: #000;
+  background: #ff0;
 }
 
 sub,
 sup {
+  position: relative;
   font-size: 75%;
   line-height: 0;
-  position: relative;
   vertical-align: baseline;
 }
 
@@ -159,9 +162,8 @@ img,
 object,
 picture {
   display: inline-block;
-  height: auto;
   max-width: 100%;
-  vertical-align: middle;
+  height: auto;
 }
 
 svg:not([fill]) {
@@ -172,15 +174,11 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-svg {
-  vertical-align: middle;
-}
-
 table {
-  border-collapse: collapse;
-  border-color: inherit;
   border-spacing: 0;
+  border-collapse: collapse;
   text-indent: 0;
+  border-color: inherit;
 }
 
 button,
@@ -201,10 +199,6 @@ button,
   -webkit-appearance: button;
 }
 
-input, select {
-  vertical-align: middle;
-}
-
 input {
   overflow: visible;
 }
@@ -214,8 +208,8 @@ select {
 }
 
 textarea {
-  margin: 0;
   overflow: auto;
+  margin: 0;
   resize: vertical;
 }
 
@@ -225,8 +219,8 @@ textarea {
 }
 
 [type=search] {
-  -webkit-appearance: textfield;
   outline-offset: -2px;
+  -webkit-appearance: textfield;
 }
 
 ::-webkit-inner-spin-button,
