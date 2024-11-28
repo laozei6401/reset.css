@@ -1,7 +1,7 @@
 {
   "name": "@laozei/reset.css",
   "version": "1.1.2",
-  "description": "",
+  "description": "重置浏览器默认样式",
   "main": "reset.min.css",
   "scripts": {
     "start": "npm run build && npm run build:min",
@@ -24,6 +24,9 @@
     "url": "https://github.com/laozei6401/reset.css/issues"
   },
   "homepage": "https://github.com/laozei6401/reset.css#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "sass": "^1.72.0"
   }
